@@ -1,4 +1,5 @@
 import React from 'react'
+import CartWidget from './CartWidget'
 
 export default function NavBar() {
     return (
@@ -11,7 +12,7 @@ export default function NavBar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0" >
                         <li className="nav-item">
                             <a className="nav-link letras" aria-current="page" href="#">Vehículos</a>
                         </li>
@@ -27,6 +28,8 @@ export default function NavBar() {
                         </li>
 
                     </ul>
+
+                    <CartWidget compras={4} />
                     <form className="d-flex  logear" role="search">
 
                         <button className="btn btn-outline-success login" type="submit">Login</button>

@@ -1,12 +1,18 @@
+import React from 'react';
 import './App.css';
+import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
+   <React.Fragment>
+    <div >
       <NavBar/>
-    <h2>Las ofertas de la semana</h2>
     </div>
+      <ItemListContainer greeting={"SALUDO DE APP"}/>
+   </React.Fragment>
+
+    
   );
 }
 
