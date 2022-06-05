@@ -26,7 +26,7 @@ export default function ItemCount({ stock }) {
     const control3 = () => {
 
 
-        if (count < stock && stock > 0) {
+        if (count <= stock && stock > 0) {
             Swal.fire({
                 title: 'Gracias por tu compra!',
                 text: `Has agregado ${count} unidad(es) al carrito`,
