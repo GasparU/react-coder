@@ -35,10 +35,51 @@
 .carrito {
     display: flex;
     background-color: rgb(67, 63, 63);
-    width: 60px;
+    width: 55px;
     margin-right: 20px;
+    color: #fff;
+    font-size: 20px;
+
 }
 
-.carrito2 {
-    color: #fff;
+.carro {
+    font-size: 30px;
+    margin: 0;
+}
+
+.carro {
+    height: 40px;
+}
+
+.boton {
+    border: 0;
+    color: blue;
+    background-color: #fff;
+    font-size: 25px;
+    margin: 0 20px 0 20px;
+}
+
+.botoncontainer {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+    margin-left: 50%;
+    border-radius: 5px;
+}
+
+.stock {
+    width: 20px;
+}
+
+.agregar {
+    display: flex;
+    margin-left: 50%;
+    width: 150px;
+    border: 1px solid rgb(88, 122, 214);
+    background-color: rgba(246, 246, 246, 0.918);
+    border-radius: 5px;
+    color: rgb(88, 122, 214);
+
 }

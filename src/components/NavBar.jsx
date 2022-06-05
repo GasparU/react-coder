@@ -29,7 +29,7 @@ export default function NavBar() {
 
                     </ul>
 
-                    <CartWidget compras={4} />
+                    <CartWidget compra={4} />
                     <form className="d-flex  logear" role="search">
 
                         <button className="btn btn-outline-success login" type="submit">Login</button>
