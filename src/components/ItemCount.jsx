@@ -11,7 +11,7 @@ export default function ItemCount({ stock }) {
                 icon: 'warning',
                 confirmButtonText: 'Cerrar'
             })
-            setCount(count + 1)
+
         } else {
             setCount(count + 1)
         }
