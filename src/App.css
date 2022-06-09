@@ -83,3 +83,13 @@
     color: rgb(88, 122, 214);
 
 }
+
+.item {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 20px 20px;
+    border: solid 1px;
+    width: 180px;
+}

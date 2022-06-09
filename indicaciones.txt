@@ -1,0 +1,37 @@
+CABECERAS:
+Dan información contextual de la información. Esto es útil no para decir qué peticiones haces sino cómo deseas hacerlo.
+Ejemplo. En la Request tenemos 3.
+POST, PUT, PATCH.
+Estas pueden tener cabeceras de autenticación como :
+Autenticacion: Para indicar quien soy.
+Cache
+Indicaciones: Para indicaciones especiales que se le hace al servidor.
+Condiciones: Para indicar que se realice algo con solo ciertas condicones.
+Cors: Para que se pueda pedir de cierta URL ajena
+Coockies
+
+CUERPO: Es la información que queremos añadir en las indicaciones fetch: GET, POST, etc.
+
+TIPOS DE CABECERAS CABECERAS
+
+1. Content-Type         : Nos indica el tipo de contenido que tengo.
+2. Content-Length       : Nos indica cuan larga es la información.
+    1.- Tipos de Content-Type:
+        text/html                   : Si lo que traigo es una página html, nos devolverá etiquetas
+        text/css                    : Si lo que traigo es una página css, nos devolverá estilos
+        applications/javascript     : Si lo que traigo es un archivo javascript que quiero que se ejecute
+        image/jpeg                  : nos trae imagenes jps, tif, png, etc.
+        application/json            : nos sirve para enviar o traer datos en tipo objetos.
+                Ejm. En la Request: POST
+                                    Content-Type: application/json  y envia Esto
+                                    {
+                                        "name" : "Carlos",
+                                        "username" : "CodingCarlos"
+                                    } 
+                    En la response: POST nos devolverá el objeto en la misma forma.
+                                    {
+                                        "id" : "asdk12epasnkd"      ----> El id cuando se trae, lo crea, esto no lo solicitamos en el request.
+                                        "name" : "Carlos",
+                                        "username" : "CodingCarlos"
+                                    }
+        application/xml             :

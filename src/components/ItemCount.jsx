@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Swal from 'sweetalert2'
+
 export default function ItemCount({ stock }) {
     const [count, setCount] = useState(1)
-
     const control = () => {
         if (count >= stock) {
             Swal.fire({
@@ -11,7 +11,6 @@ export default function ItemCount({ stock }) {
                 icon: 'warning',
                 confirmButtonText: 'Cerrar'
             })
-
         } else {
             setCount(count + 1)
         }
@@ -20,12 +19,8 @@ export default function ItemCount({ stock }) {
         if (count > 0 || count > stock) {
             setCount(count - 1)
         }
-
-
     }
     const control3 = () => {
-
-
         if (count <= stock && stock > 0) {
             Swal.fire({
                 title: 'Gracias por tu compra!',
@@ -33,15 +28,20 @@ export default function ItemCount({ stock }) {
                 icon: 'success',
                 confirmButtonText: 'Cerrar'
             })
-        } else {
+        }
+
+        if (count == 0) {
 
             Swal.fire({
                 title: 'Compra no procesada',
-                text: `No puedes comprar más de ${stock} unidades`,
+                text: `Stock mínimo es de 1 unidad`,
                 icon: 'error',
                 confirmButtonText: 'Cerrar'
             })
+
         }
+
+
     }
     return (
         <>
