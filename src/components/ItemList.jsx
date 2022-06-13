@@ -1,20 +1,13 @@
-import { useState } from "react";
-
+import Item from "./Item";
 
 export default function ItemList({ result }) {
-
     return (
-        <div >
-            {result.map(item => (
-                <div className="item">
-                    <img src={item.pictureUrl} width="150px"></img>
-                    <p >Género: {item.title}</p>
-                    <button>Descripción: {item.description}</button>
-                    <p >Precio: S/{item.price}</p>
+        <div className="card">
+            {result.map((item, id) => (
+                <div className="item" key={id}>
+                    <Item item={item}></Item>
                 </div>
             ))}
-
-
         </div>
 
     )
